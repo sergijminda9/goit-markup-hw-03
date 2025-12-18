@@ -12,6 +12,7 @@ ul {
 :root {
   font-family: 'Roboto', sans-serif;
 }
+
 /*---------- navigation---------- */
 
 .header {
@@ -20,7 +21,14 @@ ul {
   width: 1440px;
   height: 72px; */
 }
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
+
 .navigation {
+  align-items: center;
+  display: flex;
 }
 
 .navigation-link:hover,
@@ -49,6 +57,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-two-part-in-header {
@@ -62,8 +71,19 @@ ul {
   text-transform: uppercase;
   color: #2e2f42;
 }
-.navigation-lists {
+.navigation-menu-lists {
+  display: flex;
   list-style: none;
+  gap: 40px;
+}
+
+.header-contacts {
+  margin-left: auto;
+}
+
+.navigation-contact-lists {
+  display: flex;
+  gap: 40px;
 }
 .navigation-link {
   text-decoration: none;

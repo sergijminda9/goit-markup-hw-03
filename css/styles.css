@@ -162,6 +162,7 @@ ul {
   margin-bottom: 48px;
   max-width: 496px;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .hero-btn {
@@ -212,6 +213,7 @@ ul {
   gap: 24px;
 }
 .features-item {
+  width: calc((100% - 72px) / 4);
 }
 .features-subtitle {
   font-family: var(--font-family);
@@ -237,6 +239,7 @@ ul {
 
 /* ------------TEAM ----------*/
 .team {
+  box-sizing: border-box;
   background: #f4f4fd;
 }
 .team-titel {
@@ -249,16 +252,24 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  background-color: #ffffff;
+
   text-align: center;
   max-width: 162px;
   margin: 0 auto;
   margin-bottom: 72px;
+  padding-top: 120px;
 }
 .team-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px;
+  gap: 34px;
+  padding-bottom: 144px;
+  width: calc((100% - 102) / 4);
+  box-sizing: border-box;
 }
 .team-item {
   background-color: #ffffff;
@@ -269,9 +280,14 @@ ul {
   width: 264px;
   height: 356px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: #ffffff; */
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); */
+  background: #ffffff;
 }
+
+.container-subtitei-text {
+  padding: 32px 16px;
+}
+
 .team-subtitel {
   font-family: var(--font-family);
   font-weight: 500;
@@ -282,6 +298,7 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 .team-text {
   font-family: var(--font-family);
@@ -308,12 +325,23 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 .portfolio-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 24px;
+  width: calc((100% - 96) / 6);
 }
+
+.container-portfolio-subtitel-text {
+  padding: 32px 16px;
+}
+
 .portfolio-item {
 }
 .portfolio-subtitel {
@@ -343,16 +371,14 @@ ul {
   background: #2e2f42;
 }
 
-.footer-text {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-
-  /* line-height: 24px; */
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
+.footer-logo-text {
+  padding: 100px 1020px 100px 156px;
 }
+
+.container-footer-logo {
+  padding-bottom: 16px;
+}
+
 .footer-logo {
   text-transform: uppercase;
   text-decoration: none;
@@ -378,4 +404,16 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+}
+
+.footer-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  /* padding-top: 16px; */
 }

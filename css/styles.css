@@ -35,8 +35,8 @@ ul {
   border-bottom: 1px solid #e7e9fc;
   /* width: 1440px;
   height: 72px; */
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 .header-conteiner {
   display: flex;
@@ -91,6 +91,7 @@ ul {
 }
 
 .header-contacts {
+  font-style: normal;
   margin-left: auto;
 }
 
@@ -143,8 +144,8 @@ ul {
 }
 
 .hero-wrapper {
-  max-width: 1440px;
-  height: 600px;
+  /* max-width: 1440px;
+  height: 600px; */
 }
 
 .hero-titel {
@@ -191,10 +192,9 @@ ul {
 /* ---------features------- */
 
 .features {
-  padding-top: 120px;
-  padding-bottom: 156px;
+  padding: 120px 0;
 }
-..visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -259,27 +259,23 @@ ul {
 }
 .team-list {
   display: flex;
+  gap: 24px;
+
   list-style: none;
   margin: 0;
   display: flex;
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px;
-  gap: 24px;
+
   padding-bottom: 144px;
-  width: calc((100% - 72px) / 4);
   box-sizing: border-box;
 }
 
 .team-item {
+  width: calc((100% - 72px) / 4);
   background-color: #ffffff;
 }
 .team-img {
-  /* border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px;
-  width: 264px;
-  height: 356px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); */
   background: #ffffff;
 }
 
@@ -313,8 +309,10 @@ ul {
 /* -------------------PORTFOLIO--------------- */
 
 .portfolio {
+  padding: 120px 0;
 }
 .portfolio-titel {
+  margin-bottom: 72px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -324,8 +322,8 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  /* padding-top: 120px;
+  padding-bottom: 72px; */
 }
 .portfolio-list {
   list-style: none;
@@ -344,7 +342,7 @@ ul {
 }
 
 .portfolio-item {
-  width: calc((100% - 96px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .portfolio-subtitel {
   font-family: var(--font-family);
@@ -367,9 +365,6 @@ ul {
   color: #434455;
 }
 
-.portfolio-card {
-}
-
 /* --------------------footer-------------- */
 
 .footer {
@@ -378,14 +373,16 @@ ul {
 }
 
 .footer-logo-text {
-  align-items: baseline;
   display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: baseline;
 }
 
 .container-footer-logo {
   padding-bottom: 16px;
 }
-padding: 100px 1020px 100px 156px;
+/* padding: 100px 1020px 100px 156px; */
 .footer-logo {
   text-transform: uppercase;
   text-decoration: none;

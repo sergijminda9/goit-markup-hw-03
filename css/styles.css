@@ -134,6 +134,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: inline-block;
+  padding: 24px 0;
 }
 
 /* -------------------HERO-------------- */
@@ -143,10 +145,7 @@ ul {
   background: #2e2f42;
 }
 
-.hero-wrapper {
-  /* max-width: 1440px;
-  height: 600px; */
-}
+
 
 .hero-titel {
   font-family: 'Roboto', sans-serif;
@@ -179,11 +178,12 @@ ul {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  min-width: 169px;
   height: 56px;
-  /* padding: 16px 32px; */
+  padding: 16px 32px;
   display: block;
   margin: 0 auto;
+  min-width: 216px;
+  height: auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -264,14 +264,15 @@ ul {
   list-style: none;
   margin: 0;
   display: flex;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px; */
   padding: 0px 0px 32px;
-
-  padding-bottom: 144px;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .team-item {
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
   width: calc((100% - 72px) / 4);
   background-color: #ffffff;
 }
@@ -288,7 +289,7 @@ ul {
   font-weight: 500;
   font-size: 20px;
 
-  /* line-height: 24px; */
+  
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
@@ -300,13 +301,14 @@ ul {
   font-weight: 400;
   font-size: 16px;
 
-  /* line-height: 24px; */
+  line-height: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
 }
-/* -------------------PORTFOLIO--------------- */
+
+/*------------------------- PORNFOLIO-------------------- */
 
 .portfolio {
   padding: 120px 0;
@@ -317,7 +319,7 @@ ul {
   font-weight: 700;
   font-size: 36px;
 
-  /* line-height: 40px; */
+  
   line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
@@ -349,17 +351,18 @@ ul {
   font-weight: 500;
   font-size: 20px;
 
-  /* line-height: 24px; */
+ 
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+    margin-bottom: 8px;
 }
 .portfolio-text {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
 
-  /* line-height: 24px; */
+  
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -390,7 +393,7 @@ ul {
   font-weight: 700;
   font-size: 18px;
 
-  /* line-height: 21px; */
+  
   line-height: 1.16667;
   letter-spacing: 0.03em;
   text-transform: uppercase;

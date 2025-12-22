@@ -44,8 +44,12 @@ ul {
 }
 
 .navigation {
-  align-items: center;
+ 
+  /* align-items: center;
+  display: flex; */
   display: flex;
+    align-items: center; 
+    min-height: 72px;
 }
 
 .navigation-link:hover,
@@ -109,6 +113,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0; 
+    display: block;
 }
 
 .navigation-item {
@@ -141,8 +147,17 @@ ul {
 /* -------------------HERO-------------- */
 
 .hero {
+   /* max-width: 1440px; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
   padding: 188px 0;
   background: #2e2f42;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 
 
@@ -341,6 +356,7 @@ ul {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+   
 }
 
 .portfolio-item {
@@ -362,10 +378,10 @@ ul {
   font-weight: 400;
   font-size: 16px;
 
-  
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+
 }
 
 /* --------------------footer-------------- */
@@ -423,4 +439,5 @@ ul {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   /* padding-top: 16px; */
+  width: 300px;
 }
